@@ -39,6 +39,16 @@
     padding:1rem;
     }
 
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        margin-top: 5%;
+        font-size: 3rem;
+        color: #c2bbb2;
+    }
+
     /* Navbar */
     .navbar {  
     display:flex;
@@ -67,6 +77,38 @@
         width: 125px;
     }
 
+
+/*------ about-*/
+.about {
+    margin-top: 10%;
+}
+
+.container__image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+.about__image {
+    display: none;
+
+}
+
+/*---- footer ----*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer__line{
+    width: 500px;
+    height: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #4a4238;
+}
+    
 
 /*---- CARD -----*/
 .work{
@@ -208,6 +250,11 @@
     .navbar__link:hover > a::after {
         width:100%;
     }
+    .about__image {
+        width: 50%;
+        display: block;
+    
+    }
     }
 
     @media screen and (min-width:1122px) {
@@ -215,19 +262,3 @@
             flex-direction: row;
         }
     }
-.about {
-    margin-top: 10%;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer .footer__line{
-    width: 500px;
-    height: 1px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #4a4238;
-}
