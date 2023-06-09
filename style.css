@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
 
 /* Variables */
     :root {
@@ -41,9 +42,11 @@
 
     h1{
         font-size: 4rem;
+        font-family: Snippet;
     }
 
     h2{
+        font-family: Snippet;
         margin-top: 5%;
         font-size: 3rem;
         color: #c2bbb2;
