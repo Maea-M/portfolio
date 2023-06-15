@@ -30,7 +30,7 @@
     }
     /* Basic style */
     body {
-    margin:0;
+    margin:10;
     font-size:var(--font-size);
     font-family: 'Poppins', sans-serif;
     background-color: #ece7e1;
@@ -52,6 +52,9 @@
         color: #c2bbb2;
     }
 
+    p {
+        margin: 10px;
+    }
     /* Navbar */
     .navbar {  
     display:flex;
@@ -79,7 +82,13 @@
     .navbar__logo img{
         width: 125px;
     }
-
+/*---- work----*/
+.work__section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*------ about-*/
 .about {
@@ -88,8 +97,10 @@
 
 .container__image {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: auto;
 
 }
 .about__image {
@@ -97,6 +108,13 @@
 
 }
 
+/*----- contact ----*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
 /*---- footer ----*/
 footer {
     display: flex;
@@ -123,7 +141,6 @@ footer .footer__line{
 .card {
     width: 352px;
     height: 400px;
-    border: solid #4a4238 1px;
     margin: 10px;
     border-radius: 6px;
 }
@@ -253,15 +270,17 @@ footer .footer__line{
     .navbar__link:hover > a::after {
         width:100%;
     }
-    .about__image {
-        width: 50%;
-        display: block;
     
-    }
     }
 
     @media screen and (min-width:1122px) {
         .work {
             flex-direction: row;
+        }
+
+        .about__image {
+            width: 50%;
+            display: block;
+        
         }
     }
